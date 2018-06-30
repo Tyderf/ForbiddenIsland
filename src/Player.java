@@ -1,5 +1,15 @@
 public class Player {
 
+    Career playerCareer;
+
+    public Player(Career playerCareer) {
+        playerCareer = playerCareer;
+    }
+
+    public String getPlayerCareer() {
+        return playerCareer.getCareerInfo();
+    }
+
     // Player has certain career that gives them a unique ability
     // Player has a hand
     // Player has 3 actions they can do each turn
