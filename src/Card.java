@@ -1,12 +1,18 @@
+package ForbiddenIsland;
+
+import ForbiddenIsland.CardType;
+
 public class Card {
 
     // Card types
-    String cardType;
+    CardType cardType;
     String cardName;
+    String cardBody
 
-    public Card(String cardType, String cardName) {
+    public Card(CardType cardType, String cardName, String cardBody) {
         cardType = cardType;
         cardName = cardName;
+        cardBody = cardBody;
     }
 
     public String getCardName() {
@@ -16,6 +22,8 @@ public class Card {
     public String getCardType() {
         return this.cardType;
     }
+
+    public String getCardBody() { return this.cardBody; }
 
     public String showCardInfo() {
         return null;
